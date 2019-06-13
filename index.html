@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>StartP</title>
+
+	<!-- Adding css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Adding bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+	 <div class="container">
+	<header>
+		<!-- Logo -->
+		<img src="https://dl.dropbox.com/s/aaps4hh3v67jvhy/logo.png?raw=1">
+
+		<!-- NavBar -->
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Features</li>
+			<li>Pages</li>
+			<li>Blog</li>
+			<li>Contact</li>
+		</ul>
+		<button class="support">SUPPORT</button>
+		<button class="login">LOGIN</button>
+		<i class="fas fa-list"></i>
+	</header>
+
+
+	<div id="section_1">
+		<div class="part_1">
+			<h1>Secure IT Solutions<br>for a more secure<br>environment</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Quis ipsum suspendisse ultrices gravida</p>
+			<button>GET STARTED</button>
+		</div>
+
+		<div class="part_2">
+			<img src="https://dl.dropbox.com/s/o3is6tt6xw98kyc/svg.jpg?raw=1">
+		</div>
+	</div>
+
+
+	</div>
+
+	<script type="text/javascript">
+		//alert(window.innerWidth);
+		$(function() {
+			if(window.innerWidth <= 817) {
+			$("header ul").slideUp(1);
+		}
+			$("header i").click(function() {
+				$("header ul").slideToggle();
+			});
+		});
+	</script>
+
+</body>
+</html>
